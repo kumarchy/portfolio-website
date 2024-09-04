@@ -1,0 +1,42 @@
+
+.resume-container{
+  display: flex;
+  align-items: left;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.resume{
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+  border-radius: 30px;
+  outline: 1.5px solid transparent;
+  padding: 15px 35px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 15rem;
+  margin-top: 20px;
+}
+
+.resume:hover{
+  color: #a993fe;
+  background: #000;
+  outline: 1.5px solid #a993fe;
+}
+
+@media (max-width:768px){
+.resume-container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+}

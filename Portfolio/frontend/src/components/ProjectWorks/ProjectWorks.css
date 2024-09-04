@@ -1,0 +1,171 @@
+.project-container{
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+
+}
+
+.project-container h5{
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center; 
+}
+
+.projects{
+  height: auto;
+  border-radius: 0.65rem;
+  border: 1.5px solid #6751b9;
+  background: rgba(22, 17, 47, 0.398);
+  backdrop-filter: blur(1rem);
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.project-image{
+  width: 50%;
+  /* height: 20rem; */
+  margin-right: 20px;
+}
+
+.project-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.project-description{
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.project-description h1{
+  padding: 0px 30px;
+  font-weight: 700;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 40px;
+}
+
+.project-description h2{
+  padding: 20px 30px;
+  font-weight: 700;
+}
+
+.project-description p{
+  font-size: 0.8rem;
+  padding: 20px 30px;
+}
+
+.project-description H4{
+  padding: 0px 30px;
+  color:  rgb(169, 147, 254);;
+}
+.github{
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: #3d3072;
+  margin: 30px 30px;
+}
+
+.github img{
+  width: 1.8rem;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+}
+
+.arrow-left-project,
+.arrow-right-project{
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6751b9;
+  border-radius: 0.65rem;
+  border: 1.5px solid #6751b9;
+  background: #130f2a;
+  position: absolute;
+  top: 61.5%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.arrow-left-project span,
+.arrow-right-project span{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.arrow-left-project{
+  left: -2rem;
+}
+
+.arrow-right-project{
+  right: -2rem;
+}
+
+@media(max-width:1025px){
+
+  .arrow-left-project{
+    left: 0rem;
+    top: 65%;
+  }
+
+  .arrow-right-project{
+    right: 0rem;
+    top: 65%;
+  }
+}
+
+@media(max-width:768px){
+  .projects{
+    flex-direction: column;
+    height: auto;
+    padding:50px 20px;
+  }
+
+  .project-description, .project-image{
+  width: 100%;
+  }
+  
+  .project-image img{
+    padding: 0 30px;
+  }
+  .arrow-left-project,
+  .arrow-right-project{
+  top: 55%;
+}
+}
+
+@media(max-width:600px){
+  .arrow-left-project,
+  .arrow-right-project{
+  top:57.5%;
+}
+
+.projects{
+  padding: 50px 0;
+}
+
+.project-image img{
+  object-fit: contain; 
+}
+
+}
+
+
+
+
